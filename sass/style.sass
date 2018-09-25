@@ -1,0 +1,498 @@
+@import "bourbon"
+@import "app/libs/font-awesome-4.7.0/scss/font-awesome"
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.6
+  height: 100%
+  font-family: "RobotoRegular", sans-serif
+  overflow-x: hidden
+
+h2, h3, h4,h5
+  font-family: "PoppinsSemiBold", sans-serif
+
+h2
+  font-size: 40px
+h3
+  font-size: 30px
+h4
+  font-size: 24px
+h5
+  font-size: 20px
+
+a
+  text-decoration: none
+
+.main-head
+  background-color: #bebebe
+  background-image: linear-gradient(-18deg, #071d68, #0b4bec 100%)
+
+.top-menu
+  font-family: "PoppinsSemiBold", sans-serif
+  color: #fff
+  height: auto
+  &::before
+    content: ""
+    display: block
+    position: absolute
+    opacity: .1
+    height: 107px
+    width: 100%
+    top: 0
+    bottom: 0
+    background-color: #fff
+    background-image: linear-gradient(to top, #071d68 0%, #0b4bec 100%)
+  .mnu-line
+    padding: 30px 0
+
+
+
+
+.top-menu
+  .logo
+    &-text,&-img
+      display: inline-block
+    img
+      width: 40px
+    &-text
+      padding-left: 10px
+      vertical-align: bottom
+      line-height: 1.1
+      h5
+        letter-spacing: 2px
+        text-transform: uppercase
+        text-shadow: 0 3px 3px rgba(30, 28, 28, 0.75)
+      p
+        font-family: "Nunito", sans-serif
+        font-size: 12px
+        letter-spacing: 2px
+
+.top-menu
+  .main-mnu
+    text-align: right
+    li
+      display: inline-block
+      padding: 10px 12px
+      a
+        display: block
+        letter-spacing: 1px
+        color: #fff
+        padding: 4px 5px
+        text-transform: uppercase
+        font-size: 12px
+        border-radius: 12px
+        transition: all .2s ease
+        &:hover
+          text-decoration: none
+          background-color: #fff
+          color: #0b4bec
+          background-color: #fff
+
+.button
+  display: inline-block
+  font-family: "PoppinsSemiBold", sans-serif
+  color: darken(#fff, 5%)
+  background-color: #0b4bec
+  padding: 10px 50px
+  text-transform: uppercase
+  transition: all .2s ease
+  &:hover
+    background-color: darken(#0b4bec, 12%)
+    box-shadow: 0 0 20px 2px #bebebe
+    text-decoration: none
+    color: #FFF
+
+
+.main-content
+  .button
+    font-size: 14px
+    color: #0b4bec
+    background-color: darken(#fff, 5%)
+    border-radius: 22px
+    &:hover
+      background-color: darken(#fff, 5%)
+      box-shadow: 0 0 20px 2px darken(#0b4bec, 22%)
+      text-decoration: none
+  .content-wrap
+    color: #fff
+    padding: 15% 12%
+    text-align: center
+    h2
+      color: #fff
+      margin-bottom: 28px
+      z-index: 100
+    p
+      font-family: "Nunito", sans-serif
+      font-size: 14px
+      margin-bottom: 50px
+  .card-img
+    position: relative
+    text-align: center
+    padding: 0 40px
+    margin-bottom: 180px
+    .img-wrap
+      display: inline-block
+      width: auto
+
+
+
+.card2
+  position: relative
+  z-index: 2
+  width: 100%
+
+.card1,.card3
+  position: absolute
+.card1
+  top: 10px
+  left: -77px
+  z-index: 1
+  opacity: .5
+  transform: scale(.7)
+.card3
+  top: 10px
+  right: -77px
+  opacity: .5
+  transform: scale(.7)
+
+.decorate-shape
+  .shape-1,.shape-2,.shape-3,.shape-4
+    position: absolute
+
+.shape-1
+  top: 250px
+  left: 150px
+
+.shape-2
+  top: 350px
+  left: 250px
+
+.shape-3
+  top: 380px
+  left: 110px
+
+.shape-4
+  top: 480px
+  left: 240px
+
+.decorate-shape
+  .rect
+    position: absolute
+    top: 300px
+    right: -150px
+    border-radius: 72px
+    opacity: .4
+    width: 350px
+    height: 560px
+    transform: rotate(-50deg)
+    background-image: linear-gradient(-18deg, #071d68 0%, #0b4bec 100%)
+    &::after
+      position: relative
+      top: -90px
+      right: -70px
+      opacity: .6
+      background-image: linear-gradient(-18deg, #071d68 0%, #0b4bec 100%)
+      border-radius: 72px
+      content: ""
+      display: block
+      width: 350px
+      height: 560px
+
+.descr-card
+  background-color: #f3f2f2
+  text-align: center
+  padding: 150px 0
+
+.descr-items
+  vertical-align: middle
+  .item
+    display: inline-block
+    background-color: #fff
+    padding: 45px 35px
+    border: 1px solid #dbdada
+    transition: all .5s ease
+    img
+      margin-bottom: 20px
+    h5
+      font-family: "PoppinsSemiBold", sans-serif
+      text-transform: uppercase
+      color: #000
+      margin-bottom: 10px
+    p
+      font-family: "RalewayRegular", sans-serif
+      font-size: 14px
+      text-transform: none
+      transition: all .5s ease
+    &:hover
+      transform: scale(1.11)
+      background-color: #0b4bec
+      h5,p
+        color: #fff
+
+.video-box
+  position: relative
+  max-width: 930px
+  .play
+    display: none
+
+.pseudo
+  .play
+    position: absolute
+    display: block
+    color: #fff
+    width: 0
+    top: 50%
+    left: 50%
+    font-size: 100px
+    background-color: #fff
+  &::before
+    content: ''
+    position: absolute
+    opacity: .8
+    top: 0
+    height: 0
+    width: 100%
+    height: 100%
+    background-image: linear-gradient(-18deg, #071d68 0%, #0b4bec 100%)
+
+.s-video
+  text-align: center
+  .button
+    border-radius: 12px
+
+.sect-video-wrap
+  display: inline-block
+  .text-box
+    padding: 110px 200px 0 80px
+    text-align: left
+    .heading
+      h3
+        margin-bottom: 75px
+        text-transform: uppercase
+        margin-bottom: 75px
+    .item-line
+      padding-left: 15px
+      margin-bottom: 33px
+      p
+        font-size: 14px
+        color: #808080
+      h5
+        font-family: "PoppinsSemiBold"
+        font-size: 20px
+        color: #000
+        padding-bottom: 2px
+        margin-bottom: 5px
+        border-bottom: 1px solid #bebebe
+
+.s-carousel
+  padding: 200px 0 200px 0
+
+.s-text
+  h5
+    font-family: "PoppinsRegular", sans-serif
+    color: #808080
+    text-transform: uppercase
+  h3
+    margin-bottom: 120px
+    text-transform: uppercase
+
+.owl-carousel
+  .item
+    .car-wrap
+      .text-wrap
+        text-align: center
+        padding: 15px
+        border-right: 1px solid #b3b3b3
+        border-bottom: 1px solid #b3b3b3
+        border-left: 1px solid #b3b3b3
+
+.s-adv
+  position: relative
+  background-image: url('../img/bg_sect.png')
+  background-size: cover
+  background-repeat: no-repeat
+  height: 100%
+  padding: 150px 0 50px 0
+  color: #fff
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    height: 500px
+    width: 100%
+    content: ""
+    display: table
+    background-image: linear-gradient(-18deg, #071d68 0%, #0b4bec 100%)
+    opacity: .9
+  .fa
+    font-size: 52px
+    margin-bottom: 40px
+  .span
+    font-size: 56px
+  .adv-item
+    margin-bottom: 100px
+    text-align: center
+    height: 200px
+
+
+.s-msg
+  padding: 140px 0 320px 0
+  h3
+    margin-bottom: 50px
+  input, textarea, .submit
+    display: block
+    margin-bottom: 29px
+    width: 90%
+    padding: 10px
+    border: 1px solid #ccc
+    box-sizing: border-box
+  .submit
+    font-family: "RalewayRegular", sans-serif
+    font-size: 14px
+    background-color: #0b4bec
+    color: #fff
+    border: none
+    padding: 10px
+    transition: .2s all ease
+    &:hover
+      background-color: darken(#0b4bec, 10%)
+      box-shadow: 0 0 20px 2px #bebebe
+      text-decoration: none
+      color: #FFF
+
+
+
+
+footer
+  height: auto
+  position: relative
+  padding-bottom: 150px
+  color: #fff
+  .foot-wrap
+    height: inherit
+    padding: 48px 40px
+    box-shadow: 0 10px 20px rgba(30, 28, 28, 0.75)
+    background-image: linear-gradient(-18deg, #071d68 0%, #0b4bec 100%)
+    &::after
+      display: table
+      clear: both
+      content: ""
+.foot-wrap
+  p
+    font-family: "PoppinsSemiBold", sans-serif
+    font-size: 17px
+
+
+.foot-wrap
+  .foot-logo
+    margin-bottom: 30px
+    .logo-text,.logo-img
+      display: inline-block
+    img
+      width: 40px
+    .logo-text
+      color: #fff
+      padding-left: 10px
+      vertical-align: bottom
+      line-height: 1.1
+      h5
+        letter-spacing: 2px
+        text-transform: uppercase
+        text-shadow: 0 3px 3px rgba(30, 28, 28, 0.75)
+      p
+        font-family: "Nunito", sans-serif
+        font-size: 12px
+        letter-spacing: 2px
+  .foot-text
+    p
+      font-family: "RalewayRegular", sans-serif
+      margin-bottom: 35px
+  .foot-info
+    font-size: 14px
+    font-family: "PoppinsRegular", sans-serif
+    margin-bottom: 20px
+    .phone
+      margin-right: 25px
+    span
+      display: inline-block
+      letter-spacing: 1px
+    .fa
+      margin-right: 10px
+
+.foot-wrap
+  .foot-social, .foot-links, .foot-subscr, .foot-posts
+    p
+      margin-bottom: 30px
+  .foot-social
+    margin-right: 40px
+  .foot-social, .foot-links
+    display: inline-block
+    font-family: "PoppinsRegular", sans-serif
+    margin-bottom: 20px
+    a
+      color: #fff
+    .fa
+      margin-right: 5px
+    li
+      font-size: 14px
+      margin-bottom: 7px
+  .foot-subscr
+    margin-bottom: 40px
+    .foot-form
+      position: relative
+      width: 300px
+      height: 40px
+      input[type="text"]
+        padding: 10px
+        width: 250px
+        background-color: #bebebe
+        border: none
+      .foot-button
+        position: absolute
+        top: 0
+        right: 0
+        color: #0b4bec
+        background-color: #fff
+        width: 50px
+        height: 46px
+        padding: 5px
+        border: none
+  .foot-posts
+    p
+      margin-bottom: 12px
+    img
+      display: inline-block
+
+
+
+footer
+  .bg-foot
+    display: block
+    height: 250px
+    width: auto
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: -2
+
+footer
+  &::before
+    display: table
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 250px
+    content: ""
+    background-image: linear-gradient(-18deg, #071d68 0%, #0b4bec 100%)
+    opacity: .8
+    z-index: -1
+
+
+
+
+@import "_media.sass"
+@import "app/libs/animate/animate.sass"
+@import "app/libs/OwlCarousel2/dist/assets/owl.carousel.sass"
