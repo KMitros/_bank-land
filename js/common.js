@@ -2,15 +2,15 @@ $(function(){
 
   var video = document.getElementById("mVideo");
 
-  $(".video-box").click(function(){
-    if($(".play").hasClass('paused')){
+  $(".video").click(function(){
+    if($(".play").hasClass('-paused')){
       video.play();
-      $(".play").toggleClass("paused");
-      $(".video-box").toggleClass("pseudo");
+      $(".play").toggleClass("-paused");
+      $(".video").toggleClass("-pseudo");
     }else{
       video.pause();
-      $(".play").toggleClass("paused");
-      $(".video-box").toggleClass("pseudo");
+      $(".play").toggleClass("-paused");
+      $(".video").toggleClass("-pseudo");
     }
   });
 
@@ -20,24 +20,21 @@ $(function(){
     margin:20,
     responsive:{
         0:{
-            items:1,
+          items:1,
         },
         480:{
           items:2,
         },
-        768:{
-            items:2,
-        },
         992:{
-            items:3,
+          items:3,
         },
         1200:{
-            items:4,
+          items:4,
         }
     }
   });
-
-    $(".s-adv").waypoint(function(){
+  
+    $(".adv-sect").waypoint(function(){
         $({blurRadius: 5}).animate({blurRadius: 0}, {
     duration: 1200,
     easing: 'swing',
