@@ -17,17 +17,16 @@
                 top: calc(50% - 50px)
                 left: calc(50% - 46px)
                 font-size: 100px
-                background-color: $white-col
-                color: $white-col
+                background-color: $white-color
+                color: $white-color
             &::before
-                content: ''
-                position: absolute
+                +pseudo
                 opacity: .8
                 top: 0
                 height: 0
                 width: 100%
                 height: 100%
-                background-image: linear-gradient(-18deg, $grad-from 0%, $grad-to 100%)
+                background-image: linear-gradient(-18deg, $gradient-from 0%, $gradient-to 100%)
     > .text
         display: block
         max-width: 100%
@@ -36,39 +35,19 @@
             margin-bottom: .51vw
             text-transform: uppercase
             > .head
-                color: $sectext-col
+                color: $second-text-color
         > .block
             padding-left: 3vw
             margin-bottom: 3vw
             > .main
                 font-size: 14px
-                color: $sectext-col
+                color: $second-text-color
             > .head
                 padding-bottom: .51vw
                 margin-bottom: .51vw
-                font-family: $main-font-bold
+                font-family: $main-fontfamily-bold
                 font-size: 20px
-                color: $primtext-col
-                border-bottom: 1px solid $shadow-col
+                color: $primary-text-color
+                border-bottom: 1px solid $shadow-color
         > .button
             margin: 1vw 0 1vw 5vw
-
-    
-.video-sect
-    @media only screen and (min-width : 998px)
-        flex-direction: row
-        > .video
-            width: 50%
-        > .text
-            max-width: 570px
-            padding: 1vw 0 0 1vw
-            > .block
-                margin-bottom: 0
-    @media only screen and (min-width : 1200px)
-        > .text
-            padding: 1vw 0 0 1vw
-            > .block
-                margin-bottom: 3vw
-    @media only screen and (min-width : 1200px)
-        > .text
-            padding: 3vw 0 0 2vw
