@@ -1,7 +1,9 @@
 *.json
 
+.gitignore
+
 /node_modules/
 
 /.idea/
 
-*.yarn
+*yarn
