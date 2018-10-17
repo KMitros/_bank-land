@@ -93,6 +93,15 @@
 		margin-bottom: 0
 	.adv-sect
 		height: 550px
+	.video-sect
+		flex-direction: row
+		> .video
+			width: 50%
+		> .text
+			max-width: 570px
+			padding: 1vw 0 0 1vw
+			> .block
+				margin-bottom: 0
 	
 
 	/**/
@@ -100,8 +109,20 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
+	.logo
+		display: flex
+		align-items: baseline
+		> .img
+			margin-right: 2rem
+
 	.menu-line
 		display: flex
 		align-items: center
+	
+	.video-sect
+		> .text
+            padding: 3vw 0 0 2vw
+            > .block
+                margin-bottom: 3vw
 		
 	/**/

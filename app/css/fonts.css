@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "PoppinsRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Poppins-Regular/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular/Poppins-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PoppinsSemiBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Poppins-SemiBold/Poppins-SemiBold.eot");
+  src: url("../fonts/Poppins-SemiBold/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-SemiBold/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold/Poppins-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Raleway-Regular/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular/Raleway-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Nunito";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Nunito/Nunito-Regular.eot");
+  src: url("../fonts/Nunito/Nunito-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito/Nunito-Regular.woff") format("woff"), url("../fonts/Nunito/Nunito-Regular.ttf") format("truetype"); }

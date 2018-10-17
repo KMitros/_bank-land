@@ -1,5 +1,6 @@
 @import "app/libs/font-awesome-4.7.0/scss/font-awesome"
 @import "variables"
+@import "_mixins/all-mixins"
 @import "_components/*"
 
 
@@ -17,7 +18,7 @@ h2,
 h3, 
 h4,
 h5
-  font-family: $main-font-bold
+  font-family: $main-fontfamily-bold
 
 h2
   font-size: 40px
@@ -32,16 +33,16 @@ a:hover
   text-decoration: none
 
 .main-head
-  background-image: linear-gradient(-18deg, $grad-from, $grad-to 100%)
+  background-image: linear-gradient(-18deg, $gradient-from, $gradient-to 100%)
   overflow-x: hidden
 
 .head-line-grad
-  background-image: linear-gradient(to top, lighten($grad-from,17%), $grad-to 100%)
+  background-image: linear-gradient(to top, lighten($gradient-from,17%), $gradient-to 100%)
 
 .menu-line
   margin-bottom: 3rem
-  color: $white-col
-  font-family: $main-font-bold
+  color: $white-color
+  font-family: $main-fontfamily-bold
   .main-mnu
     > .menu
       text-align: center
@@ -52,36 +53,36 @@ a:hover
           display: block
           padding: 1rem 1.5rem
           letter-spacing: 1px
-          color: $white-col
+          color: $white-color
           text-transform: uppercase
           font-size: 12px
           border-radius: 22px
           transition: all .5s ease
           &:hover
             text-decoration: none
-            background-color: $white-col
-            color: $sec-col
-            box-shadow: 0 0 20px 2px $shadow-col
+            background-color: $white-color
+            color: $second-color
+            box-shadow: 0 0 20px 2px $shadow-color
   
 
 .adv-cards
   padding-top: 4vw
-  background-color: $secbg-col
+  background-color: $second-bg-color
   text-align: center
   .head-adv
     text-transform: uppercase
     margin-bottom: 4vw
     > .sec
-      font-family: $main-font
-      color: $sectext-col
+      font-family: $main-fontfamily
+      color: $second-text-color
     > .prim
-      font-family: $main-font-bold
-      color: $primtext-col
+      font-family: $main-fontfamily-bold
+      color: $primary-text-color
   .adv-card
     margin-bottom: 10vw
-    background-color: $white-col
+    background-color: $white-color
     padding: 3rem 3rem
-    border: 1px solid $secbg-col
+    border: 1px solid $second-bg-color
     transition: all .5s ease
     > .icon
         margin-bottom: 20px
@@ -89,34 +90,34 @@ a:hover
       line-height: 2.3rem
       > .head
         margin-bottom: 2rem
-        font-family: $main-font-bold
+        font-family: $main-fontfamily-bold
         text-transform: uppercase
         transition: all .5s ease
       > .main
-        color: $sectext-col
-        font-family: $third-font
+        color: $second-text-color
+        font-family: $third-fontfamily
         font-size: 14px
         text-transform: none
         transition: all .5s ease
     &:hover
-      box-shadow: 0 0 20px 2px $shadow-col
+      box-shadow: 0 0 20px 2px $shadow-color
       transform: scale(1.1)
-      background-image: linear-gradient(to top, lighten($grad-from,17%), $grad-to 100%)
+      background-image: linear-gradient(to top, lighten($gradient-from,17%), $gradient-to 100%)
       > .text
           > .main,> .head
-              color: $white-col
+              color: $white-color
 
 
 .carousel-sect
   padding: 20rem 0
   .car-head
       > .sec
-          font-family: $main-font
-          color: $sectext-col
+          font-family: $main-fontfamily
+          color: $second-text-color
           text-transform: uppercase
       > .prim
           margin-bottom: 12rem
-          color: $primtext-col
+          color: $primary-text-color
           text-transform: uppercase
   .car-item
       > .img
@@ -125,9 +126,9 @@ a:hover
               width: 100%
       > .text
           padding: 1rem
-          border-right: 1px solid $shadow-col
-          border-bottom: 1px solid $shadow-col
-          border-left: 1px solid $shadow-col
+          border-right: 1px solid $shadow-color
+          border-bottom: 1px solid $shadow-color
+          border-left: 1px solid $shadow-color
           text-align: center
 
 
@@ -138,16 +139,14 @@ a:hover
   background-image: url('../img/bg_sect.png')
   background-size: cover
   background-repeat: no-repeat
-  color: $white-col
+  color: $white-color
   &::before
+    +pseudo
     top: 0
     left: 0
     height: 100%
     width: 100%
-    content: ""
-    position: absolute
-    display: table
-    background-image: linear-gradient(-18deg, $grad-from 0%, $grad-to 100%)
+    background-image: linear-gradient(-18deg, $gradient-from 0%, $gradient-to 100%)
     opacity: .9
   .adv-item
     height: 200px
@@ -172,21 +171,21 @@ a:hover
       margin-bottom: 2rem
       width: 90%
       padding: 10px
-      border: 1px solid #ccc
+      border: 1px solid $shadow-color
       box-sizing: border-box
     .submit
       font-family: "RalewayRegular", sans-serif
       font-size: 14px
-      background-color: $main-col
-      color: $white-col
+      background-color: $main-color
+      color: $white-color
       border: none
       padding: 10px
       transition: .2s all ease
       &:hover
-        background-color: $white-col
-        box-shadow: 0 0 20px 2px $shadow-col
+        background-color: $white-color
+        box-shadow: 0 0 20px 2px $shadow-color
         text-decoration: none
-        color: $main-col
+        color: $main-color
 
 
 .main-foot
@@ -194,12 +193,12 @@ a:hover
   width: 100%
   padding-bottom: 150px
   position: relative
-  color: $white-col
+  color: $white-color
   .foot-bar
     height: inherit
     padding: 2vw 2vw
-    box-shadow: 0 10px 20px darken($shadow-col, 60%)
-    background-image: linear-gradient(-18deg, $grad-from 0%, $grad-to 100%)
+    box-shadow: 0 10px 20px darken($shadow-color, 60%)
+    background-image: linear-gradient(-18deg, $gradient-from 0%, $gradient-to 100%)
     &::after
       display: table
       clear: both
@@ -207,7 +206,7 @@ a:hover
 
     .first-column
       margin-top: 2rem
-      font-family: $main-font-bold
+      font-family: $main-fontfamily-bold
       font-size: 17px
       text-align: center
       > .logo
@@ -216,13 +215,13 @@ a:hover
         margin-bottom: 3vw
         display: inline-block
         padding-left: 10px
-        color: darken($white-col, 20%)
-        font-family: $third-font
+        color: darken($white-color, 20%)
+        font-family: $third-fontfamily
         vertical-align: bottom
         line-height: 1.1
       > .contacts
         font-size: 14px
-        font-family: $main-font
+        font-family: $main-fontfamily
         margin-bottom: 20px
         .fa
           margin-right: 10px
@@ -236,7 +235,8 @@ a:hover
       > .menu
         display: inline-block
         margin-bottom: 5rem
-        font-family: $main-font
+        font-family: $main-fontfamily
+        text-align-last: left
         li
           margin-bottom: 7px
           font-size: 14px
@@ -244,7 +244,7 @@ a:hover
           .fa
             margin-right: 5px
           a
-            color: $white-col
+            color: $white-color
           &:hover
             transform: scale(1.3)
 
@@ -254,7 +254,7 @@ a:hover
       > .subscr
         margin-bottom: 40px
         > .head
-          font-family: $main-font-bold
+          font-family: $main-fontfamily-bold
         > .foot-form
           position: relative
           width: 275px
@@ -263,7 +263,7 @@ a:hover
           > .email
             padding: 10px
             max-width: 250px
-            background-color: $shadow-col
+            background-color: $shadow-color
             border: none
           > .foot-submit
             width: 50px
@@ -273,13 +273,13 @@ a:hover
             top: 0
             right: 13px
             margin-left: -5rem
-            color: $main-col
-            background-color: $white-col
+            color: $main-color
+            background-color: $white-color
             border: none
       > .instagram
         > .head
           margin-bottom: 12px
-          font-family: $main-font-bold
+          font-family: $main-fontfamily-bold
           a
             display: inline-block
 
@@ -294,14 +294,12 @@ a:hover
     background-image: url("../img/bg_foot.png")
     background-size: cover
     &::before
-      display: table
-      position: absolute
+      +pseudo
       left: 0
       bottom: 0
       width: 100%
       height: 340px
-      content: ""
-      background-image: linear-gradient(-18deg, $grad-from 0%, $grad-to 100%)
+      background-image: linear-gradient(-18deg, $gradient-from 0%, $gradient-to 100%)
       opacity: .8
       z-index: 0
 

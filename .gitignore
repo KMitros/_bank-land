@@ -2,8 +2,11 @@ gulpfile.js
 
 package.json
 
+<<<<<<< HEAD
 package-lock.json
 
+=======
+>>>>>>> dev
 /node_modules
 
 yarn*
